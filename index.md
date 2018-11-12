@@ -9,11 +9,15 @@ layout: home
 
 UDM: [link to UDM](https://coursepress.lnu.se/program/utveckling-och-drift-av-mjukvarusystem/)
 
+<ul class="course-list">
 {% for course in site.pages %}
   {% if course.coursecode %}
-  <a href= "{{ course.url }}">{{ course.coursecode }}</a>
+  <li title= "{{ course.courseName }}">
+      <a href= "{{ course.url }}">{{ course.coursecode }}</a>
+  </li>  
   {% endif %}  
 {% endfor %}
+</ul>
 
 
 
