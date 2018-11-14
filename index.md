@@ -11,9 +11,9 @@ UDM: [link to UDM](https://coursepress.lnu.se/program/utveckling-och-drift-av-mj
 
 <ul class="course-list">
 {% for course in site.pages %}
-  {% if course.coursecode %}
+  {% if course.courseCode %}
   <li title= "{{ course.courseName }}">
-      <a href= "{{ course.url }}">{{ course.coursecode }}</a>
+      <a href= "{{ course.url }}">{{ course.courseCode }}</a>
   </li>  
   {% endif %}  
 {% endfor %}
