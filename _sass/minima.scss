@@ -10,13 +10,20 @@ $base-line-height: 1.5 !default;
 
 $spacing-unit:     30px !default;
 
+$color1:  rgb(107, 192, 241);
+$color2: rgb(26, 65, 240);
+
 $text-color:       #111 !default;
-$background-color: #f5e3bd !default;
+//$background-color: #f5e3bd !default;
+$background-color: lighten($color1, 17%) !default;
 $brand-color:      #2a7ae2 !default;
 
 $grey-color:       #828282 !default;
 $grey-color-light: lighten($grey-color, 30%) !default;
 $grey-color-dark:  darken($grey-color, 25%) !default;
+
+$header-font-color: #f2f2f2;
+$header-footer-background-image: linear-gradient(90deg, rgb(107, 192, 241), rgb(26, 65, 240));
 
 $table-text-align: left !default;
 

@@ -3,9 +3,10 @@
  */
 .site-header {
   border-top: 5px solid $grey-color-dark;
-  border-bottom: 1px solid $grey-color-light;
-  min-height: $spacing-unit * 1.865;
-  background-color: #e3bdf5;
+  border-bottom: 1px solid $grey-color-dark;
+  min-height: $spacing-unit * 2;
+  //background-image: linear-gradient(90deg, rgb(107, 192, 241), #ddd 40%, #ddd 60%, rgb(26, 65, 240));;
+  background-image: $header-footer-background-image;
 
   // Positioning context for the mobile navigation icon
   position: relative;
@@ -13,15 +14,21 @@
 
 .site-title {
   @include relative-font-size(2.5);
-  font-weight: 600;
+  font-weight: 900;
   line-height: $base-line-height * $base-font-size * 2.25;
-  letter-spacing: 1px;
+  letter-spacing: 4px;
   margin-bottom: 0;
   float: left;
+  font-variant: small-caps;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black,
+                4px 4px 0.2em black;
 
   &,
   &:visited {
-    color: $grey-color-dark;
+    color: $header-font-color;
+  }
+  &:hover {
+    text-decoration: none;
   }
 }
 
@@ -38,7 +45,7 @@
   }
 
   .page-link {
-    color: $text-color;
+    color: $header-font-color;
     line-height: $base-line-height;
 
     // Gaps between nav items, but not on the last one
@@ -107,13 +114,16 @@
  * Site footer
  */
 .site-footer {
-  border-top: 1px solid $grey-color-light;
-  padding: $spacing-unit 0;
+  border-top: 2px solid $grey-color-light;
+  padding: $spacing-unit / 4 0;
+  //background-color: $background-color
+  background-image: $header-footer-background-image;
+
 }
 
 .footer-heading {
   @include relative-font-size(1.125);
-  margin-bottom: $spacing-unit / 2;
+  margin-bottom: $spacing-unit / 4;
 }
 
 .contact-list,
@@ -136,18 +146,19 @@
 }
 
 .footer-col-1 {
-  width: -webkit-calc(35% - (#{$spacing-unit} / 2));
-  width:         calc(35% - (#{$spacing-unit} / 2));
+  width: -webkit-calc(25% - (#{$spacing-unit} / 2));
+  width:         calc(25% - (#{$spacing-unit} / 2));
 }
 
 .footer-col-2 {
-  width: -webkit-calc(20% - (#{$spacing-unit} / 2));
-  width:         calc(20% - (#{$spacing-unit} / 2));
+  width: -webkit-calc(30% - (#{$spacing-unit} / 2));
+  width:         calc(30% - (#{$spacing-unit} / 2));
 }
 
 .footer-col-3 {
   width: -webkit-calc(45% - (#{$spacing-unit} / 2));
   width:         calc(45% - (#{$spacing-unit} / 2));
+  font-style: italic;
 }
 
 @include media-query($on-laptop) {
