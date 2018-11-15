@@ -12,14 +12,16 @@ $base-line-height: 1.5 !default;
 $spacing-unit:     30px !default;
 
 $color2: #00539f;
-$color1: lighten($color2, 30%);
-$color-highlight:  rgb(255, 255, 80);
+$color1: lighten($color2, 25%);
+$color-highlight:  rgb(255, 255, 150);
 $color-button-highlight: $color-highlight;
 $link-color-highlight: rgb(255, 70, 255);
+$highlight-background-color: rgb(255, 255, 235);
 
 $text-color:       #111 !default;
 //$background-color: #f5e3bd !default;
-$background-color: lighten($color2, 58%) !default;
+//$background-color: lighten($color2, 58%) !default;
+$background-color: rgb(230, 240, 255) !default;
 //$brand-color:      #2a7ae2 !default;
 $brand-color:     lighten($color2, 15%) !default;
 $brand-font-variant: small-caps;

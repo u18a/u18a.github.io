@@ -224,7 +224,7 @@
 .home {
   text-align: center;
   p {
-    margin: 0 15%;
+    margin: 0 12%;
     text-align: justify;
   }
 }
@@ -238,15 +238,6 @@
   color: $header-footer-font-color;
   font-variant: small-caps;
 }
-
-.course-description {
-  background-color: white;
-  padding: 10px 20px;
-  margin: $spacing-unit/2 $spacing-unit;
-  border: 1px solid $grey-color;
-  border-radius: 10px;
-}
-
 
  /**
  * Page content
@@ -359,4 +350,16 @@
       }
     }
   }
+}
+
+.course-description {
+  background-color: $highlight-background-color;
+  padding: 10px 20px;
+  margin: $spacing-unit/2 $spacing-unit;
+  border: 1px solid $grey-color;
+  border-radius: 10px;
+}
+
+.robot-text {
+  background-color: $highlight-background-color; 
 }
