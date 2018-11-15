@@ -3,14 +3,16 @@ layout: default
 ---
 
 <h1> {{ page.courseCode }} {{ page.courseName }} </h1>
-<p> 
+
+<p>
+  Course website: <a href= "{{ page.webSite }}"> {{ page.courseCode }}</a> 
+</p>
+<p class="course-description"> 
   {{ page.description }} 
 </p>
-<p>
-  Course Web site: <a href= "{{ page.webSite }}"> {{ page.courseCode }}</a> 
-</p>
-<h2> Useful tools and links of {{ page.courseCode }} </h2>
 
 <div class="course-content">
     {{ content }}
 </div>
+
+<a href= "{{ site.url }}">🡄 Back to Start</a>

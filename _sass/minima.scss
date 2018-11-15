@@ -11,13 +11,11 @@ $base-line-height: 1.5 !default;
 
 $spacing-unit:     30px !default;
 
-//$color1:  rgb(107, 192, 241);
-//$color2: rgb(26, 65, 240);
-
 $color2: #00539f;
 $color1: lighten($color2, 30%);
-$color-highlight: yellow;
-$link-color-highlight: rgb(245, 52, 252);
+$color-highlight:  rgb(255, 255, 80);
+$color-button-highlight: $color-highlight;
+$link-color-highlight: rgb(255, 70, 255);
 
 $text-color:       #111 !default;
 //$background-color: #f5e3bd !default;
@@ -37,7 +35,9 @@ $header-font-color: $header-footer-font-color;
 $header-footer-background-image: 
   linear-gradient(60deg, $color1, $color2 10%, $color2 40%, $color1 50%, $color2 60%, $color2 90%, $color1);
 $header-footer-text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black,
-                4px 4px 0.2em black;
+4px 4px 0.2em black;
+  // $contour-color: $grey-color-dark;
+  // $contour-shadow: -1px 0 $contour-color, 0 1px $contour-color, 1px 0 $contour-color, 0 -1px $contour-color;
 
 $table-text-align: left !default;
 
