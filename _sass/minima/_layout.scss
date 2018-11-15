@@ -1,12 +1,20 @@
 /**
+ * Site body
+ */
+.site-body {
+  border-top: 8px solid $background-color;
+}
+
+
+/**
  * Site header
  */
-.site-header {
-  border-top: 5px solid $grey-color-dark;
+ .site-header {
+  border-top: 1px solid $grey-color-dark;
   border-bottom: 1px solid $grey-color-dark;
   min-height: $spacing-unit * 2;
-  //background-image: linear-gradient(90deg, rgb(107, 192, 241), #ddd 40%, #ddd 60%, rgb(26, 65, 240));;
   background-image: $header-footer-background-image;
+  text-shadow: $header-footer-text-shadow;
 
   // Positioning context for the mobile navigation icon
   position: relative;
@@ -16,12 +24,10 @@
   @include relative-font-size(2.5);
   font-weight: 900;
   line-height: $base-line-height * $base-font-size * 2.25;
-  letter-spacing: 4px;
+  letter-spacing: 3px;
   margin-bottom: 0;
   float: left;
-  font-variant: small-caps;
-  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black,
-                4px 4px 0.2em black;
+  font-variant: $brand-font-variant;
 
   &,
   &:visited {
@@ -29,6 +35,7 @@
   }
   &:hover {
     text-decoration: none;
+    color: $color-highlight;
   }
 }
 
@@ -45,9 +52,18 @@
   }
 
   .page-link {
-    color: $header-font-color;
+    color: $header-footer-font-color;
     line-height: $base-line-height;
-
+    font-weight: bold;
+    &,
+    &:visited {
+      color: $header-font-color;
+    }
+    &:hover {
+      text-decoration: none;
+      color: $color-highlight;
+    }
+  
     // Gaps between nav items, but not on the last one
     &:not(:last-child) {
       margin-right: 20px;
@@ -114,16 +130,32 @@
  * Site footer
  */
 .site-footer {
-  border-top: 2px solid $grey-color-light;
+  border-top: 1px solid $grey-color-dark;
   padding: $spacing-unit / 4 0;
-  //background-color: $background-color
   background-image: $header-footer-background-image;
-
-}
+  color: $header-footer-font-color;
+  text-shadow: $header-footer-text-shadow;
+  a {
+    color: $header-footer-font-color;
+  
+    &,
+    &:visited {
+      color: $header-footer-font-color;
+    }
+  
+    &:hover {
+      text-decoration: none;
+      color: $color-highlight;
+      font-weight: bold;
+    }
+  }
+  }
 
 .footer-heading {
   @include relative-font-size(1.125);
   margin-bottom: $spacing-unit / 4;
+  font-variant: $brand-font-variant;
+  font-weight: bold;
 }
 
 .contact-list,
@@ -134,7 +166,6 @@
 
 .footer-col-wrapper {
   @include relative-font-size(0.9375);
-  color: $grey-color;
   margin-left: -$spacing-unit / 2;
   @extend %clearfix;
 }
@@ -146,8 +177,8 @@
 }
 
 .footer-col-1 {
-  width: -webkit-calc(25% - (#{$spacing-unit} / 2));
-  width:         calc(25% - (#{$spacing-unit} / 2));
+  width: -webkit-calc(20% - (#{$spacing-unit} / 2));
+  width:         calc(20% - (#{$spacing-unit} / 2));
 }
 
 .footer-col-2 {
@@ -156,8 +187,8 @@
 }
 
 .footer-col-3 {
-  width: -webkit-calc(45% - (#{$spacing-unit} / 2));
-  width:         calc(45% - (#{$spacing-unit} / 2));
+  width: -webkit-calc(50% - (#{$spacing-unit} / 2));
+  width:         calc(50% - (#{$spacing-unit} / 2));
   font-style: italic;
 }
 
