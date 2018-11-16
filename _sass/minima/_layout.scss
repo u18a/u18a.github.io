@@ -326,6 +326,7 @@
  */
 .course-list {
   li {
+    background-image: $button-background-image;
     margin-top: $spacing-unit;
     margin-bottom: $spacing-unit / 2;
     margin-right: $spacing-unit;
@@ -334,20 +335,20 @@
     border-radius: 8px;
     border: 1px solid $grey-color-dark;
     position: relative;
-    background-color: $color2;
-    //text-shadow: $header-footer-text-shadow;
-    box-shadow: $header-footer-text-shadow;
-    &:hover, &:hover * {
-      background-color: $color-button-highlight;
-      color: $grey-color-dark;
+    box-shadow: $box-shadow;
+    text-shadow: $contour-shadow;
+    &:hover {
+      background-image: $button-hl-background-image;
+      border: 1px solid $grey-color-light;
+      &, &:hover * {
+        color: #444;
+        text-shadow: $contour-shadow-light;
+        text-decoration: none;
+      }
     }
   a {
     color: white;
     font-weight: bold;
-      &:hover {
-        text-decoration: none;
-        color: $grey-color-dark;
-      }
     }
   }
 }
@@ -360,6 +361,6 @@
   border-radius: 10px;
 }
 
-.robot-text {
+.robots-text {
   background-color: $highlight-background-color; 
 }
