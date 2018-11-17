@@ -11,40 +11,38 @@ $base-line-height: 1.5 !default;
 
 $spacing-unit:     30px !default;
 
-$color2: #00539f;
-$color1: lighten($color2, 25%);
-$color-highlight:  rgb(255, 255, 125);
-$color-hl-2: $color-highlight;
-$color-hl-1: lighten($color-hl-2, 25%);
-$color-button-highlight: $color-highlight;
-$link-color-highlight: rgb(255, 70, 255);
-$highlight-background-color: rgb(255, 255, 235);
+$color2: #00539f !default;
+$color1: lighten($color2, 15%) !default; // Corresponds to $color1: rgb(32,147,254);
+$color3: rgb(65, 224, 252) !default;
+
+$color-highlight: rgb(255, 255, 125) !default;
+$color-hl-2:      $color-highlight !default;
+$color-hl-1:      lighten($color-hl-2, 25%) !default;
+$color-button-highlight:     $color-highlight !default;
+$link-color-highlight:       rgb(255, 70, 255) !default;
+$background-color-highlight: rgb(255, 255, 235) !default;
 
 $text-color:       #111 !default;
-//$background-color: #f5e3bd !default;
-//$background-color: lighten($color2, 58%) !default;
+$text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black,
+  5px 5px 0.2em black;
 $background-color: rgb(230, 240, 255) !default;
-//$brand-color:      #2a7ae2 !default;
 $brand-color:     lighten($color2, 15%) !default;
-$brand-font-variant: small-caps;
+$brand-font-variant: small-caps !default;
 
 $grey-color:       #828282 !default;
 $grey-color-light: lighten($grey-color, 30%) !default;
 $grey-color-dark:  darken($grey-color, 25%) !default;
 
-//$header-footer-font-color: #f2f2f2;
 $header-footer-font-color: white;
-$header-font-color: $header-footer-font-color;
 //$header-footer-background-image: linear-gradient(90deg, $color1,$color2);
 $button-hl-background-image: 
   linear-gradient(60deg, $color-hl-1, $color-hl-2 30%, $color-hl-2 70%, $color-hl-1);
 
+$header-footer-background-image: 
+  linear-gradient(60deg, $color3, $color1 6%, $color2 20%, $color2 42%,$color1 50%, 
+                         $color2 58%, $color2 80%, $color1 94%, $color3);
 $button-background-image: 
   linear-gradient(60deg, $color1, $color2 23%, $color2 77%, $color1);
-$header-footer-background-image: 
-  linear-gradient(60deg, $color1, $color2 10%, $color2 40%, $color1 50%, $color2 60%, $color2 90%, $color1);
-$header-footer-text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black,
-  4px 4px 0.2em black;
 $box-shadow: 4px 4px 0.2em black;
 $contour-color: #111;
 $contour-shadow: -1px 0 $contour-color, 0 1px $contour-color, 1px 0 $contour-color, 0 -1px $contour-color;

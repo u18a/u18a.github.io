@@ -1,37 +1,34 @@
 /**
- * Site body
- */
-.site-body {
-  border-top: 8px solid $background-color;
-}
-
-
-/**
  * Site header
  */
  .site-header {
-  border-top: 1px solid $grey-color-dark;
+  border-top: 3px solid $grey-color-dark;
   border-bottom: 1px solid $grey-color-dark;
   min-height: $spacing-unit * 2;
   background-image: $header-footer-background-image;
-  text-shadow: $header-footer-text-shadow;
+  font-weight: bold;
+  text-shadow: $text-shadow;
+  &, &:visited {
+    color: $header-footer-font-color;
+  }
+  &:hover {
+    text-decoration: none;
+    color: $color-highlight;
+  }
 
   // Positioning context for the mobile navigation icon
   position: relative;
 }
 
 .site-title {
-  @include relative-font-size(2.5);
-  font-weight: 700;
-  line-height: $base-line-height * $base-font-size * 2.25;
+  @include relative-font-size(2.6);
+  line-height: $base-line-height * $base-font-size * 2.4;
   letter-spacing: 1px;
-  margin-bottom: 0;
   float: left;
   font-variant: $brand-font-variant;
 
-  &,
-  &:visited {
-    color: $header-font-color;
+  &, &:visited {
+    color: $header-footer-font-color;
   }
   &:hover {
     text-decoration: none;
@@ -52,12 +49,9 @@
   }
 
   .page-link {
-    color: $header-footer-font-color;
     line-height: $base-line-height;
-    font-weight: bold;
-    &,
-    &:visited {
-      color: $header-font-color;
+    &, &:visited {
+      color: $header-footer-font-color;
     }
     &:hover {
       text-decoration: none;
@@ -66,7 +60,7 @@
   
     // Gaps between nav items, but not on the last one
     &:not(:last-child) {
-      margin-right: 20px;
+      margin-right: $spacing-unit;
     }
   }
 
@@ -74,8 +68,8 @@
     position: absolute;
     top: 9px;
     right: $spacing-unit / 2;
-    background-color: $background-color;
-    border: 1px solid $grey-color-light;
+    background-color: lighten($color1, 35%);
+    border: 1px solid $grey-color-dark;
     border-radius: 5px;
     text-align: right;
 
@@ -126,6 +120,7 @@
 
 
 
+
 /**
  * Site footer
  */
@@ -134,15 +129,11 @@
   padding: $spacing-unit / 4 0;
   background-image: $header-footer-background-image;
   color: $header-footer-font-color;
-  text-shadow: $header-footer-text-shadow;
+  text-shadow: $text-shadow;
   a {
-    color: $header-footer-font-color;
-  
-    &,
-    &:visited {
+    &, &:visited {
       color: $header-footer-font-color;
-    }
-  
+    }  
     &:hover {
       text-decoration: none;
       color: $color-highlight;
@@ -175,7 +166,6 @@
 
 .footer-col {
   float: left;
-  //margin-bottom: $spacing-unit / 2;
   padding-left: $spacing-unit / 2;
 }
 
@@ -218,6 +208,7 @@
 
 
 
+
 /**
  * Home
  */
@@ -229,15 +220,8 @@
   }
 }
 
-.site-body h1 {
-  @include relative-font-size(2);
-  font-weight: 600;
-  $contour-color: $grey-color-dark;
-  text-shadow: -1px 0 $contour-color, 0 1px $contour-color, 1px 0 $contour-color, 0 -1px $contour-color,
-  2px 2px 0.3em black, 2px 2px 1em $color2, 4px 4px 0.2em black;
-  color: $header-footer-font-color;
-  font-variant: small-caps;
-}
+
+
 
  /**
  * Page content
@@ -245,6 +229,21 @@
 .page-content {
   padding: $spacing-unit 0;
   flex: 1;
+  h1 {
+    @include relative-font-size(2.1);
+    font-weight: bold;
+    $contour-color: $grey-color-dark;
+    text-shadow: -1px 0 $contour-color, 0 1px $contour-color, 1px 0 $contour-color, 0 -1px $contour-color,
+    2px 2px 0.4em black, 2px 2px 1.5em $color2, 4px 4px 0.2em black;
+    color: $header-footer-font-color;
+    font-variant: $brand-font-variant;
+    margin-top: $spacing-unit / 2;
+    margin-bottom: $spacing-unit / 2;
+  }
+  h2 {
+    margin-top: $spacing-unit / 2;
+    margin-bottom: 0;
+  }
 }
 
 .page-heading {
@@ -280,13 +279,12 @@
  * Posts
  */
 .post-header {
-  margin-bottom: $spacing-unit;
+  //margin-bottom: $spacing-unit;
 }
 
 .post-title {
   @include relative-font-size(2.625);
-  letter-spacing: -1px;
-  line-height: 1;
+  letter-spacing: 0px;
 
   @include media-query($on-laptop) {
     @include relative-font-size(2.25);
@@ -321,6 +319,8 @@
   }
 }
 
+
+
 /**
  * Courses
  */
@@ -354,14 +354,29 @@
 }
 
 .course-description {
-  background-color: $highlight-background-color;
+  background-color: $background-color-highlight;
   padding: 10px 20px;
   margin: $spacing-unit/2 $spacing-unit;
   border: 1px solid $grey-color;
   border-radius: 10px;
 }
 
+
+
+/**
+ * Other
+ */
+
 .code-text {
-  background-color: $highlight-background-color; 
+  background-color: $background-color-highlight; 
   margin: $spacing-unit/2 $spacing-unit;
+}
+
+.backlink {
+  @include relative-font-size(1.5);
+  margin: $spacing-unit;
+  font-weight: bold;
+  a {
+    margin-right: $spacing-unit * 2;
+  }
 }

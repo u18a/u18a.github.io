@@ -1,17 +1,18 @@
 /* TEAM */
-	Site developer, author: Andersson
-	Github: u18a
+  Site developer, author: Andersson
+  Github: u18a
   Location: Sweden
 
-/* THANKS */
+/* THANKS */ 
   Teacher: Johan Leitet
   Teacher: Mats Look
   University: Linnaeus University
+  Supporter: Jonathan
 
 /* SITE */
-	Language: English
-	Doctype: HTML5
-	IDE: Visual Studio Code
+  Language: English
+  Doctype: HTML5
+  IDE: Visual Studio Code
   -- Developed as a part of the course 
      "1DV022 Client­based Web Programming" 
      at the Linnaeus University in Sweden.

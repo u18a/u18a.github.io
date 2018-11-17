@@ -20,6 +20,11 @@ comments: true
     {{ content }}
   </div>
 
+  <div class= "backlink">
+    <a  href= "{{ site.url }}/blog">🡄 Back to Bloglist</a>
+    <a  href= "{{ site.url }}">🡄 Back to Start</a>
+  </div>
+
   {%- if site.disqus.shortname -%}
     {%- include disqus_comments.html -%}
   {%- endif -%}

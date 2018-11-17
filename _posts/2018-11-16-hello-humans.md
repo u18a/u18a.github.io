@@ -16,4 +16,4 @@ If you want to spread the words about the site, and especially the **_people_** 
 </iframe>
 
 Read more about the initiative humans.txt on [humanstxt.org](http://humanstxt.org/), where it is recommended to add the button
-[![logo from humanstxt.org](/assets/humanstxt-isolated-orange.gif "Show human.txt")]({{ site.url }}/humans.txt) and link it to `humans.txt`.
+[![logo from humanstxt.org](/assets/humanstxt-isolated-blank.gif "Show human.txt")]({{ site.url }}/humans.txt) and link it to `humans.txt`.
