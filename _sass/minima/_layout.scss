@@ -339,7 +339,7 @@
     text-shadow: $contour-shadow;
     &:hover {
       background-image: $button-hl-background-image;
-      border: 1px solid $grey-color-light;
+      border: 1px solid #aaa;
       &, &:hover * {
         color: #444;
         text-shadow: $contour-shadow-light;
@@ -361,6 +361,7 @@
   border-radius: 10px;
 }
 
-.robots-text {
+.code-text {
   background-color: $highlight-background-color; 
+  margin: $spacing-unit/2 $spacing-unit;
 }
