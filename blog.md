@@ -2,6 +2,7 @@
 layout: blogpage
 title: Blog
 caption: Welcome to the BLOG!
+nav: true
 permalink: /blog/
 ---
 
