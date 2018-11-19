@@ -7,6 +7,7 @@
   Teacher: Johan Leitet
   Teacher: Mats Look
   University: Linnaeus University
+  Youtuber: Mike Dane
   Supporter: Jonathan
 
 /* SITE */

@@ -4,17 +4,10 @@ title: About
 permalink: /about/
 ---
 
-At the university education [Software Development and Operations (UDM)](https://coursepress.lnu.se/program/utveckling-och-drift-av-mjukvarusystem/) at Linnaeus University in Sweden, the students adopt a vast amount of useful tools.
+At the university education [Software Development and Operations (UDM)](https://coursepress.lnu.se/program/utveckling-och-drift-av-mjukvarusystem/) at the Linnaeus University in Sweden, the students adopt a vast amount of useful tools. The purpose of this site is to be a library of these tools and other links/material acquired during the three years of programme studies. 
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](https://jekyllrb.com/)
+For now, the content is sorted based on the different courses of the program, but that may change in the future when it may be better to sort the material du to subject instead, time will tell...
 
-You can find the source code for Minima at GitHub:
-[jekyll][jekyll-organization] /
-[minima](https://github.com/jekyll/minima)
+This website was developed by Anette Andersson as the first (out of three) exam assignments of the course _1DV022 Client­based Web Programming_, november 2018. The main purpose with this exercise to acquire basic knowledge of how to use CSS preprocessors and static site generators.
 
-You can find the source code for Jekyll at GitHub:
-[jekyll][jekyll-organization] /
-[jekyll](https://github.com/jekyll/jekyll)
-
-
-[jekyll-organization]: https://github.com/jekyll
+![Andersson](/favicon.ico)

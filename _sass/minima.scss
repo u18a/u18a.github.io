@@ -34,7 +34,6 @@ $grey-color-light: lighten($grey-color, 30%) !default;
 $grey-color-dark:  darken($grey-color, 25%) !default;
 
 $header-footer-font-color: white;
-//$header-footer-background-image: linear-gradient(90deg, $color1,$color2);
 $button-hl-background-image: 
   linear-gradient(60deg, $color-hl-1, $color-hl-2 30%, $color-hl-2 70%, $color-hl-1);
 
@@ -52,7 +51,7 @@ $contour-shadow-light: -1px 0 $contour-color-light, 0 1px $contour-color-light, 
 $table-text-align: left !default;
 
 // Width of the content area
-$content-width:    1000px !default;
+$content-width:    900px !default;
 
 $on-palm:          600px !default;
 $on-laptop:        $content-width !default;

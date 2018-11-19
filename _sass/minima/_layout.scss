@@ -234,7 +234,7 @@
     font-weight: bold;
     $contour-color: $grey-color-dark;
     text-shadow: -1px 0 $contour-color, 0 1px $contour-color, 1px 0 $contour-color, 0 -1px $contour-color,
-    2px 2px 0.4em black, 2px 2px 1.5em $color2, 4px 4px 0.2em black;
+    2px 2px 0.4em black, 2px 2px 1.3em $color2, 4px 4px 0.2em black;
     color: $header-footer-font-color;
     font-variant: $brand-font-variant;
     margin-top: $spacing-unit / 2;
@@ -278,10 +278,6 @@
 /**
  * Posts
  */
-.post-header {
-  //margin-bottom: $spacing-unit;
-}
-
 .post-title {
   @include relative-font-size(2.625);
   letter-spacing: 0px;
@@ -333,13 +329,13 @@
     display: inline-block;
     padding: 7px 20px;
     border-radius: 8px;
-    border: 1px solid $grey-color-dark;
+    border: 2px solid $grey-color-dark;
     position: relative;
     box-shadow: $box-shadow;
     text-shadow: $contour-shadow;
     &:hover {
       background-image: $button-hl-background-image;
-      border: 1px solid #aaa;
+      border: 2px solid #aaa;
       &, &:hover * {
         color: #444;
         text-shadow: $contour-shadow-light;
@@ -372,11 +368,14 @@
   margin: $spacing-unit/2 $spacing-unit;
 }
 
-.backlink {
+.back-link {
   @include relative-font-size(1.5);
-  margin: $spacing-unit;
+  margin: $spacing-unit /2;
   font-weight: bold;
   a {
     margin-right: $spacing-unit * 2;
+    &:not(:hover){ 
+      color: $grey-color-dark;
+    }
   }
 }
