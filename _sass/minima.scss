@@ -2,7 +2,6 @@
 
 // Define defaults for each variable.
 
-//$base-font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !default;
 $base-font-family: -apple-system, BlinkMacSystemFont, Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !default;
 $base-font-size:   16px !default;
 $base-font-weight: 400 !default;
@@ -41,8 +40,8 @@ $header-footer-background-image:
   linear-gradient(60deg, $color3, $color1 6%, $color2 20%, $color2 42%,$color1 50%, 
                          $color2 58%, $color2 80%, $color1 94%, $color3);
 $button-background-image: 
-  linear-gradient(60deg, $color1, $color2 23%, $color2 77%, $color1);
-$box-shadow: 4px 4px 0.2em black;
+  linear-gradient(60deg, $color3, $color1 10%, $color2 30%, $color2 70%, $color1 90%, $color3);
+$box-shadow: 5px 5px 0.2em black;
 $contour-color: #111;
 $contour-shadow: -1px 0 $contour-color, 0 1px $contour-color, 1px 0 $contour-color, 0 -1px $contour-color;
 $contour-color-light: $color-hl-2;

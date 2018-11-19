@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Hello Humans!"
-date:   2018-11-16 12:29:00 +0100
+date:   2018-11-19 11:29:00 +0100
 ---
 
 Computers, robots, processors, algorithms, machines... well, they do a great job completing their tasks fast and accurate. But to live a happy life, we need... **_humans_** (right?)!
@@ -11,7 +11,7 @@ If you want to spread the words about the site, and especially the **_people_** 
 <iframe class = "code-text" 
   src="{{ site.url }}/humans.txt"
   width = "600"
-  height = "300">
+  height = "340">
 </iframe>
 
 Read more about the initiative humans.txt on [humanstxt.org](http://humanstxt.org/), where it is recommended to add the button

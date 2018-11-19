@@ -4,16 +4,18 @@ layout: default
 
 <h1> {{ page.courseCode }} {{ page.courseName }} </h1>
 
-<p>
-  Course website: <a href= "{{ page.webSite }}"> {{ page.courseCode }}</a> 
-</p>
-<p class="course-description"> 
-  {{ page.description }} 
-</p>
+<div class="course-post"></div>
+  <p class="course-website">
+    Course website: <a href= "{{ page.webSite }}"> {{ page.courseCode }}</a> 
+  </p>
+  <p class="course-description"> 
+    {{ page.description }} 
+  </p>
 
-<div class="course-content">
-    {{ content }}
-</div>
-<div class= "back-link">
-  <a  href= "{{ site.url }}">🡄 Back to Start</a>
+  <div class="course-content">
+      {{ content }}
+  </div>
+  <div class= "back-link">
+    <a  href= "{{ site.url }}">🡄 Back to Start</a>
+  </div>
 </div>

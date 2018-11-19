@@ -17,7 +17,7 @@ A CSS preprocessor uses its own syntax and generates the CSS and will work as an
   * Use mixins
 * Use variables!
 
-However, as the regular CSS itself evolves and adopts more and more of the requested tools, using CSS preprocessors might no longer be relevant. One thing to bear in mind is that once a site is built with a certain CSS preprocessor, it might be difficult to change back to the regular CSS later. The maintenance team gets stuck to one more tool. Furthermore, using a CSS preprocessor might lead to the following disadvantages ([see reference](https://rawgit.com/1dv022/syllabus/master/lectures/01/index.html#/6) and further reading at [adamsilver.io](https://adamsilver.io/articles/the-disadvantages-of-css-preprocessors/)):
+However, as the regular CSS evolves and adopts more and more of the requested tools, using CSS preprocessors might no longer be relevant. One thing to bear in mind is that once a site is built with a certain CSS preprocessor, it might be difficult to change back to the regular CSS later. The maintenance team gets stuck to one more tool. Furthermore, using a CSS preprocessor might lead to the following disadvantages ([see reference](https://rawgit.com/1dv022/syllabus/master/lectures/01/index.html#/6) and further reading at [adamsilver.io](https://adamsilver.io/articles/the-disadvantages-of-css-preprocessors/)):
 
 * Harder to debug your code
   * Line numbers in browser !== line numbers in source
@@ -27,4 +27,4 @@ However, as the regular CSS itself evolves and adopts more and more of the reque
 * Building times increase
 * Save generated files in source control?
 
-The CSS of this site has been developed using [Sass](https://sass-lang.com/). Other CSS preprocessors are [{less}](http://lesscss.org/) and [stylus](http://stylus-lang.com/). Of the advantages listed above, the _use of variables_ seemed like the most important, making it possible to easily change and evaluate different colors schemes.
+The CSS of this site has been developed using [Sass](https://sass-lang.com/). Other CSS preprocessors are [{less}](http://lesscss.org/) and [stylus](http://stylus-lang.com/). Of the advantages listed above, the _use of variables_ was the one I benefitted the most in this project, making it possible to easily change and evaluate different colors schemes.
